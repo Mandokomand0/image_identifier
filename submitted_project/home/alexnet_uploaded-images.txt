@@ -1,0 +1,102 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 7 key-value pairs.
+Below are 7 of them:
+ 1 key:             Tank_678956759.jpg  label:                       tank
+ 2 key:              lion_14719001.jpg  label:                       lion
+ 3 key:          afghan_hound_9600.jpg  label:               afghan hound
+ 4 key:                    husky_2.jpg  label:                      husky
+ 5 key:           bloodhound_89080.jpg  label:                 bloodhound
+ 6 key:                 akita_3714.jpg  label:                      akita
+ 7 key:                 husky_8780.jpg  label:                      husky
+
+     MATCH:
+
+            Tank_678956759.jpg: 
+Real:                       tank   Classifier: tank, army tank, armored combat vehicle, armoured combat vehicle
+
+         afghan_hound_9600.jpg: 
+Real:               afghan hound   Classifier:           afghan hound, afghan
+
+          bloodhound_89080.jpg: 
+Real:                 bloodhound   Classifier:        bloodhound, sleuthhound
+
+                husky_8780.jpg: 
+Real:                      husky   Classifier:                 siberian husky
+
+ NOT A MATCH:
+
+             lion_14719001.jpg: 
+Real:                       lion   Classifier:                chow, chow chow
+
+                   husky_2.jpg: 
+Real:                      husky   Classifier: indri, indris, indri indri, indri brevicaudatus
+
+                akita_3714.jpg: 
+Real:                      akita   Classifier:                      chihuahua
+
+# Total Images 7 # Matches: 4 # NOT Matches: 3
+
+     MATCH:
+
+            Tank_678956759.jpg: 
+Real:                       tank   Classifier: tank, army tank, armored combat vehicle, armoured combat vehicle  
+PetLabelDog: 0  ClassLabelDog: 0
+
+         afghan_hound_9600.jpg: 
+Real:               afghan hound   Classifier:           afghan hound, afghan  
+PetLabelDog: 1  ClassLabelDog: 1
+
+          bloodhound_89080.jpg: 
+Real:                 bloodhound   Classifier:        bloodhound, sleuthhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                husky_8780.jpg: 
+Real:                      husky   Classifier:                 siberian husky  
+PetLabelDog: 0  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+             lion_14719001.jpg: 
+Real:                       lion   Classifier:                chow, chow chow  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                   husky_2.jpg: 
+Real:                      husky   Classifier: indri, indris, indri indri, indri brevicaudatus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                akita_3714.jpg: 
+Real:                      akita   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 7 # Matches: 4 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  7  N Dog Images:  3  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:  66.7
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  7  N Dog Images:  3  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:  66.7
+
+
+*** Results Summary for  ALEXNET ***
+N Images            :   7
+N Dog Images        :   3
+N Non-Dog Images    :   4
+Percentage of correctly correctly identified dogs: 100.0%
+Percentage of correctly correctly identified notdogs: 50.0%
+Percentage of correctly correctly identified breed: 66.66666666666666%
+Percentage of correctly correctly identified match: 57.14285714285714%
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                          0   Classifier:                              1
+Real:                          0   Classifier:                              1
+
+INCORRECT Dog Breed Assignment:
+Real:                      akita   Classifier:                      chihuahua
+
+** Total Elapsed Runtime: 0:0:0
